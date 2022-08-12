@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Proyecto_2</title>
 </head>
 <body>
+    <!-- Se agrega formulario con modificaciones-->
+    <form style="margin-top: 30px; display: flex; flex-direction: column; font-size: large;">
+    <h2 class="form-title">Promedio de evaluacion de entrenamiento </h2>
     
+    <p>Ingrese el numero de tiros convertidos <br> <input style="width:100px; text-align: center; font-size: medium;" type="text" id="n1"></p>
+    <p>Ingrese el numero de pases correctos <br> <input style="width:100px; text-align: center;font-size: medium;" type="text" id="n2"></p>
+    <p>Ingrese el numero de veces que se completo el circuito <br> <input style="width:100px; text-align: center; font-size: medium;" type="text" id="n3"></p>
+    <p><input style="width:200px; font-size: large;" type="button" value="Calcular" onclick="CalcularPromedio()"></p>
+    <p id="promedio" style="font-weight:bold; font-size: 40px"></p>
+    <p>Ingresar el dia de entrenamiento (MAYUSCULA) <br> <input style="width:100px; text-align: center" type="text" id="e1"></p>
+    <p><input style="width:200px; font-size: large;" type="button" value="Resumen" onclick="CalcularPromedio()"></p>
+    
+
+</form> 
 </body>
-<script src="js/ejercicio2.js"></script>
+<script src="js/ejercicio3.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>
